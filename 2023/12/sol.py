@@ -20,7 +20,7 @@ def is_row_valid(row, conf):
 
 def pt1():
 	with open("input.txt") as f:
-		lines = ex#f.read().strip().split("\n")
+		lines = f.read().strip().split("\n")
 		rows = [(line.split(" ")[0], [int(n) for n in line.split(" ")[1].split(",")]) for line in lines]
 		combinations = []
 		for (row, rule) in rows:
